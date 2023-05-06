@@ -4,12 +4,15 @@
     "description": "A simple module created to incentivise using inspiration in D&D by providing visuals as reminders for players.",
     "authors": [
         {
-            "name": "Wazlow"
+            "name": "Wazlow",
+            "email": "twesleybailey@gmail.com",
+            "url": "https://thomaswesleyb.github.io/"
         }
     ],
     "version": "1.0.0",
     "compatibility": {
         "minimum": "9",
         "verified": "10"
-    }
+    },
+    "system": ["dnd5e"]
 }
