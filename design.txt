@@ -1,0 +1,15 @@
+General Idea:
+
+1. Provide a specific player a notification when they have inspiration
+2. Make it easier for players to remember that they have inspiration
+3. Make an intuitive way to use inspiration within foundry
+    Maybe if they have inspiration, whenever they make a qualifying roll,
+    the advantage button will light up
+4. Implement a voting system in roll20 for inspiration
+
+
+When a player has inspiration, a gold ampersand will show up next to
+their player name. Whenever they make a roll, there will be a gold
+ampersand button (?) next to the advantage. If they click that, it uses
+their inspiration and gives them advantage.
+

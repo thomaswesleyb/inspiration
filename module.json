@@ -1,0 +1,15 @@
+{
+    "id": "inspiration",
+    "title": "Inspiration - A Module Providing Intuitive Inspiration Use",
+    "description": "A simple module created to incentivise using inspiration in D&D by providing visuals as reminders for players.",
+    "authors": [
+        {
+            "name": "Wazlow"
+        }
+    ],
+    "version": "1.0.0",
+    "compatibility": {
+        "minimum": "9",
+        "verified": "10"
+    }
+}
