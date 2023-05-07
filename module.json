@@ -17,6 +17,6 @@
     "system": ["dnd5e"],
     "url": "https://github.com/thomaswesleyb/inspiration",
     "scripts": [
-        "scripts/main-insp.js"
+        "scripts/inspiration-main.js"
     ]
 }

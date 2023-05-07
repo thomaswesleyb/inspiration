@@ -5,7 +5,7 @@ General Idea:
 3. Make an intuitive way to use inspiration within foundry
     Maybe if they have inspiration, whenever they make a qualifying roll,
     the advantage button will light up
-4. Implement a voting system in roll20 for inspiration
+4. Implement a voting system in roll20 for inspiration?
 
 
 When a player has inspiration, a gold ampersand will show up next to
@@ -13,3 +13,46 @@ their player name. Whenever they make a roll, there will be a gold
 ampersand button (?) next to the advantage. If they click that, it uses
 their inspiration and gives them advantage.
 
+
+For character in player.ownedCharacterList, if character.inspiration = true...
+OR for character in characterList, if character.owned = currentPlayer, AND char.inspiration = true...
+Then display inspiration marker on top right of screen, and next to player name.
+Also, add inspiration button to rolls above/next to advantage button.
+If inspiration button is clicked, remove inspiration from selected token. If no selected token,
+remove inspiration from the first character controlled by the player.
+
+Useful log for reference:
+console.log(canvas.tokens.controlled[0].actor.data.data.attributes.inspiration);
+
+If token.permissionOwned = current user
+
+if: gold ampersand is not rendered:
+for id in game.actors.ownership: 
+    if id.get(game.users.current.id) = 3: // check if user has top level perms
+    then, if:
+        actor.attributes.inspiration = 1
+        render a gold ampersand in the top right corner of player's screen
+
+
+for (var i = 0; i < actorlist.length; i++) {console.log(actorlist[i].name)}
+
+Fill a list of actors owned by current user, known as 
+userOwnedActors
+
+for (var i = 0; i < actorlist.length; i++) {
+    for (id in actorlist[i].ownership) {
+        if (id === game.users.current.id && id.getOwnership === 3 && actorlist[i].attributes.inspiration) {
+            console.log(true)
+            }
+            
+        }
+}
+
+for (var i = 0; i < actorlist.length; i++) {
+    for (id in actorlist[i].ownership) {
+        if (id === game.users.current.id && actorlist[i].system.attributes.inspiration) {
+            display the icon
+        }
+            
+    }
+}
