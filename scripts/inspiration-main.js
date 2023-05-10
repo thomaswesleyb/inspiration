@@ -1,4 +1,4 @@
-let INSP_RENDERED = 0;
+import InspirationToken from inspiration-token.js;
 
 Hooks.on("init", function() {
     console.log("This code runs once the Foundry VTT software begins its initialization workflow.");   
@@ -15,6 +15,8 @@ Hooks.on("init", function() {
             console.log(current_user.id);
             console.log("--------------------------------------------------");
             console.log("--------------------------------------------------");
+            
+            const token = new InspirationToken(5, 5);
           }
               
       }
